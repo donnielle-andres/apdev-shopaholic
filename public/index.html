@@ -1,0 +1,244 @@
+<!--CCAPDEV-->
+<!--Members:-->
+<!--ANDRES, DONNIELLE MOYRA A.-->
+<!--SANTOS, LANA LEIGH U.-->
+<!--TAMAYO, FRANCIS EMMANUEL M.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopaholic</title>
+        <!-- GOOGLE FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- CSS STYLES -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+        <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+        <link rel="stylesheet" href="css/colorlib-ast.css" type="text/css">
+        <link rel="stylesheet" href="css/index-style.css" type="text/css">
+    </head>
+    
+    <body>
+        <!--NAVIGATION HEADER-->
+        <header class="header bg-aqua">
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-2">
+                        <div class="header__logo">
+                            <a href="index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-7">
+                        <nav class="header__menu">
+                            <ul>
+                                <li class="active"><a href="index.html">Home</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="login.html">Log In | Register</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="header__right">
+                            <ul class="header__right__widget">
+                                <li>
+                                    <form class="d-flex">
+                                        <input class="form-control me-2" type="text" placeholder="Search">
+                                        <button class="btn btn-outline-light" type="button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search-heart-fill" viewBox="0 0 16 16">
+                                                <path d="M6.5 13a6.474 6.474 0 0 0 3.845-1.258h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.008 1.008 0 0 0-.115-.1A6.471 6.471 0 0 0 13 6.5 6.502 6.502 0 0 0 6.5 0a6.5 6.5 0 1 0 0 13Zm0-8.518c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--CAROUSEL-->
+        <section class="categories">
+            <div class="container-fluid p-0">
+                <div id="header-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="w-75" src="img/product/prod_7.jpg" alt="Image">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <div class="p-3" style="max-width: 900px;">
+                                    <h1 class="display-3 text-white mb-3">Clothing</h1>
+                                    <h5 class="text-white mb-3 d-none d-sm-block">Women's Snooze Clothes (Set)</h5>
+                                    <a href="hd/product7.html" class="btn btn-lg btn-primary mt-3 mt-md-4 px-4">Click for more details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="w-75" src="img/product/prod_8.jpg" alt="Image">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <div class="p-3" style="max-width: 900px;">
+                                    <h1 class="display-3 text-white mb-3">Vehicle</h1>
+                                    <h5 class="text-white mb-3 d-none d-sm-block">Toyota Ravioli (2nd Hand)</h5>
+                                    <a href="hd/product8.html" class="btn btn-lg btn-primary mt-3 mt-md-4 px-4">Click for more details</a>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                        <div class="btn btn-primary rounded" style="width: 45px; height: 45px;">
+                            <span class="carousel-control-prev-icon mb-n2"></span>
+                        </div>
+                    </a>
+                    <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                        <div class="btn btn-primary rounded" style="width: 45px; height: 45px;">
+                            <span class="carousel-control-next-icon mb-n2"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--LIST OF LISTINGS-->
+        <section class="product spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="section-title">
+                            <h4>NEW AND HOT LISTINGS</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row product_gallery">
+                    <div class="col-3">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/prod_1.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="img/product/prod_1.jpg" class="image-popup">
+                                        <span class="arrow_expand"></span></a>
+                                    </li>
+                                    <li><a href="hd/product1.html"><span class="arrow_carrot-2down"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6><a href="hd/product1.html">Brand New Books For Sale</a></h6>
+                                <div class="product__price"> ₱ 400 - 2600 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/prod_2.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="img/product/prod_2.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                    <li><a href="hd/product2.html"><span class="arrow_carrot-2down"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6><a href="hd/product2.html"> Plant Shelf (Used)</a></h6>
+                                <div class="product__price"> ₱ 2459.99 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/prod_3.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="img/product/prod_3.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                    <li><a href="hd/product3.html"><span class="arrow_carrot-2down"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6><a href="hd/product3.html"> House and Lot in Marikina</a></h6>
+                                <div class="product__price"> ₱ 12,000,000 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/prod_4.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="img/product/prod_4.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                    <li><a href="hd/product4.html"><span class="arrow_carrot-2down"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6><a href="hd/product4.html"> Guess Tilly Bag (New) </a></h6>
+                                <div class="product__price"> ₱ 5,490.00 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/prod_5.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="img/product/prod_5.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                    <li><a href="hd/product5.html"><span class="arrow_carrot-2down"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6><a href="hd/product5.html"> Used Playstation 4 (Black)</a></h6>
+                                <div class="product__price"> ₱ 7,000 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="product__item sale">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/prod_6.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="img/product/prod_6.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                    <li><a href="hd/product6.html"><span class="arrow_carrot-2down"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6><a href="hd/product6.html"> Nintendo Switch Full Set (2nd Hand)</a></h6>
+                                <div class="product__price"> ₱ 10,000.00 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/prod_7.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="img/product/prod_7.jpg" class="image-popup"> <span class="arrow_expand"> </span></a></li>
+                                    <li><a href="hd/product7.html"><span class="arrow_carrot-2down"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6><a href="hd/product7.html"> Clothing Set </a></h6>
+                                <div class="product__price">₱ 1,300 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="product__item sale">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/prod_8.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="img/product/prod_8.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                    <li><a href="hd/product8.html"><span class="arrow_carrot-2down"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6><a href="hd/product8.html">Toyota Ravioli (2nd Hand)</a></h6>
+                                <div class="product__price"> ₱ 22,300.50 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--JAVASCRIPT FILES-->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/mixitup.min.js"></script>
+        <script src="js/jquery.countdown.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

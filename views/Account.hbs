@@ -1,0 +1,174 @@
+<!--CCAPDEV-->
+<!--Members:-->
+<!--ANDRES, DONNIELLE MOYRA A.-->
+<!--SANTOS, LANA LEIGH U.-->
+<!--TAMAYO, FRANCIS EMMANUEL M.-->
+
+<html>
+    <head>
+        <title> {{userinfo.username}} </title>
+        <!-- GOOGLE FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- CSS STYLES -->
+        <link rel="stylesheet" href="../public/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="../public/css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="../public/css/elegant-icons.css" type="text/css">
+        <link rel="stylesheet" href="../public/css/jquery-ui.min.css" type="text/css">
+        <link rel="stylesheet" href="../public/css/magnific-popup.css" type="text/css">
+        <link rel="stylesheet" href="../public/css/colorlib-ast.css" type="text/css">
+        <link rel="stylesheet" href="../public/css/accStyle.css" type="text/css">
+        <link rel="stylesheet" href="../public/css/index-style.css" type="text/css">
+        <script src="https://kit.fontawesome.com/3c2324a202.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--NAVIGATION BAR-->
+        <header class="header bg-aqua">
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-2">
+                        <div class="header__logo">
+                            <a href="index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-7">
+                        <nav class="header__menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li class="active"><a href="/userProfile" method="get">Profile</a></li>
+                                <li><a href="CreateProd.html">Create Listing</a></li>
+                                <li><a href="/logout" method="get">Log out</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="header__right">
+                            <ul class="header__right__widget">
+                                <li>
+                                    <form class="d-flex">
+                                        <input class="form-control me-2" type="text" placeholder="Search">
+                                        <button class="btn btn-outline-light" type="button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search-heart-fill" viewBox="0 0 16 16">
+                                                <path d="M6.5 13a6.474 6.474 0 0 0 3.845-1.258h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.008 1.008 0 0 0-.115-.1A6.471 6.471 0 0 0 13 6.5 6.502 6.502 0 0 0 6.5 0a6.5 6.5 0 1 0 0 13Zm0-8.518c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--COVER PHOTO-->
+        <div id="main">
+        <img id="cover" src="./public/img/Shopaholic.png">
+
+        <!--ACCOUNT INFO-->
+        <div id="accInfo" href= {{userinfo.username}}> 
+            
+            <img id="dp" src= {{userinfo.displaypic}}> 
+            <p id="displayname" name="displayname" > {{userinfo.displayname}} </p>
+            <p id="username" name="username" >@{{userinfo.username}} </p>
+            <p id="location" name="location">📍 {{userinfo.location}} </p>
+            <p id="phonenum" name="phonenum">📞{{userinfo.phonenum}} </p>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#accountModal">
+            Update Info
+            </button>
+            <br>
+            <a href="CreateProd.html">
+            <button type="button" class="btn btn-primary">
+            Create Listing
+            </button>
+            </a>
+        </div>
+
+        <!--UPDATE ACCOUNT INFORMATION MODAL-->
+        <form action="/updateinfo" method="post">
+            <div class="modal fade" id="accountModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Update Account Information</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder={{userinfo.username}}> </input>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Username</label>
+                                    <input type="text" class="form-control" id="inputUsername">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Display Name</label>
+                                    <input type="text" class="form-control" id="inputFirstname">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Contact Number</label>
+                                    <input type="text" class="form-control" id="inputContact">
+                                </div>
+                                
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+        <!--LISTINGS AND REVIEWS TAB-->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="listing-tab" data-bs-toggle="tab" data-bs-target="#listing" type="button" role="tab" aria-controls="listing" aria-selected="true">Listings</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab" aria-controls="review" aria-selected="false">Reviews</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+
+            <!--LISTING TAB-->
+            <div class="tab-pane fade show active" id="listing" role="tabpanel" aria-labelledby="listing-tab">
+
+                {{#each prodinfo}}
+                    <a href= "viewProduct/{{_id}}" >
+                        <div class="card">
+                            <img class="card-img-top" src="{{prodimg}}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title"> {{prodname}} </h5>
+                                <p class="card-text">PHP <span> {{prodpric}} </span></p>
+                            </div>
+                        </div>
+                    </a>    
+                {{/each}}
+
+            </div>   
+        
+
+            <!--REVIEWS TAB-->
+            <div="tab-pane fade" id="review">
+                <div= "card">
+                    {{#each cards}}
+                        {{card}}
+                    {{/each}}
+                </div>
+            </div>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

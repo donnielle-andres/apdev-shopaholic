@@ -1,0 +1,118 @@
+html {
+    font-family: "Montserrat", sans-serif !important;
+}
+
+#main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+	font-family: "Montserrat", sans-serif;
+    
+}
+
+#cover {
+    width: 1220px !important;
+    height: 250px !important;
+    object-fit: cover !important;
+    
+    display: block !important;
+}
+
+#accInfo {
+    display: inline;
+    float: left;
+    font-family: sans-serif !important;
+    line-height: 0.5;
+    margin-left: 16px;
+    margin-top: 10px;
+}
+
+#displayname {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#username {
+    font-style: italic;
+}
+
+#dp {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 25px;
+}
+
+button{
+    margin-bottom: 15px;
+}
+
+
+.nav-item {
+    font-size: 20px;
+}
+
+#contentList {
+    float: right;
+}
+
+#listingImg {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    
+}
+
+#listing1, #listing2, #listing3, #listing4, #listing5 {
+    display: inline;
+    margin-top: 10px;
+}
+
+.card {
+    width: 200px;
+    display: inline-block !important;
+    margin-right: 18px;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+.card-img-top {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+#myTab {
+    margin-left: 300px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#myTabContent {
+    margin-left: 300px;
+}
+
+#reviewName {
+    text-decoration: underline;
+}
+
+#reviewPic {
+    border-radius: 100%;
+    display: inline;
+    max-width: 50px;
+}
+
+#reviewStars li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.card-title {
+    font-size: 15px;
+}

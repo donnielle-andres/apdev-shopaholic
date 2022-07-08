@@ -1,0 +1,18 @@
+.bg-aqua {
+    background-color: #8FEFEF !important;
+}
+
+.header__menu {
+    font-size: 20px;
+}
+
+.btn {
+    background-color: #6493D1;
+    border-color: #6493D1;
+}
+
+#rev-form {
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}

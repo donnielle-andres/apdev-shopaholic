@@ -1,0 +1,188 @@
+<!--CCAPDEV-->
+<!--Members:-->
+<!--ANDRES, DONNIELLE MOYRA A.-->
+<!--SANTOS, LANA LEIGH U.-->
+<!--TAMAYO, FRANCIS EMMANUEL M.-->
+
+<html>
+    <head>
+        <title>Morbius Fan Dummy</title>
+        <!--GOOGLE FONTS-->
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!--CSS STYLES-->
+        <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
+        <link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
+        <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css">
+        <link rel="stylesheet" href="../css/colorlib-ast.css" type="text/css">
+        <link rel="stylesheet" href="../css/accStyle.css" type="text/css">
+        <link rel="stylesheet" href="../css/index-style.css" type="text/css">
+
+        <script src="https://kit.fontawesome.com/3c2324a202.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <body>
+            <header class="header bg-aqua">
+                <div class="container-fluid ">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-2">
+                            <div class="header__logo">
+                                <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7">
+                            <nav class="header__menu">
+                                <ul>
+                                    <li><a href="../index.html">Home</a></li>
+                                    <li><a href="../Shop.html">Shop</a></li>
+                                    <li><a href="../login.html">Log In | Register</a></li>
+                                
+                                </ul>
+                            </nav>
+                        </div>
+    
+                        <div class="col-lg-3">
+                            <div class="header__right">
+                                <ul class="header__right__widget">
+                                    <li> 
+                                        <form class="d-flex">
+                                            <input class="form-control me-2" type="text" placeholder="Search">
+                                            <button class="btn btn-outline-light" type="button"> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search-heart-fill" viewBox="0 0 16 16">
+                                                    <path d="M6.5 13a6.474 6.474 0 0 0 3.845-1.258h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.008 1.008 0 0 0-.115-.1A6.471 6.471 0 0 0 13 6.5 6.502 6.502 0 0 0 6.5 0a6.5 6.5 0 1 0 0 13Zm0-8.518c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
+                                                </svg>
+                                            </button>
+                                        </form> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+        <div id="main">
+            <img id="cover" src="../img/Shopaholic2.png">
+
+            <div id="accInfo">
+                <img id="dp" src="../img/default.png">
+                <p id="fullname">Morbius Fan Dummy</p>
+                <p id="username">@MorbiusSweepTest</p>
+                <p id="location">City of Pasig</p>
+                <p id="location">+69583478104</p>
+            </div>
+
+            <div class="modal fade" id="accountModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Update Account Information</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                              <label class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label">Username</label>
+                              <input type="text" class="form-control" id="inputUsername">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control" id="inputPassword">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="inputFirstname">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="inputLastname">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Contact Number</label>
+                                <input type="text" class="form-control" id="inputContact">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary mr-auto">Delete Account</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="listing-tab" data-bs-toggle="tab" data-bs-target="#listing" type="button" role="tab" aria-controls="listing" aria-selected="true">Listings</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab" aria-controls="review" aria-selected="false">Reviews</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="listing" role="tabpanel" aria-labelledby="listing-tab">
+                <a href="product7.html">
+                    <div class="card">
+                        <img class="card-img-top" src="../img/product/prod_7.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Women's Snooze Clothes (Set)</h5>
+                            <p class="card-text">PHP <span>1,300.00</span></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="product8.html">
+                <div class="card">
+                        <img class="card-img-top" src="../img/product/prod_8.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Toyota Ravioli (2nd Hand)</h5>
+                            <p class="card-text">PHP <span>22,300.50</span></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="product5.html">
+                    <div class="card">
+                            <img class="card-img-top" src="../img/product/prod_5.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Used Playstation 4 (Black)</h5>
+                                <p class="card-text">PHP <span>7,000</span></p>
+                            </div>
+                        </div>
+                    </a>
+                
+            </div>
+            <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                <div id="reviews">
+                    <div id="contentRev">
+                        <div id="review1">
+                            <img src="../img/default.png" id="reviewPic">
+                            <a href="shopOwn1.html"><p id="reviewName">@ShopMaster</p></a>
+                            <div id="reviewStars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <a href="product7.html" style="text-decoration: underline;"><p id="reviewText">Women's Snooze Clothes (Set)</p></a>
+                            <p id="reviewText">Very good!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            
+            
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

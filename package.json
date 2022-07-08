@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "dev": "node -r dotenv/config server.js"
   },
   "author": "Andres, Santos, Tamayo",

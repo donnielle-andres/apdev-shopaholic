@@ -38,9 +38,9 @@ app.use(express.static(__dirname));
 // FILE UPLOAD
 const fileUpload = require('express-fileupload');
 
-/*const {
+const {
     envPort, secret 
-} = require ('./config'); */
+} = require ('./config'); 
 
 
 //HBS

@@ -89,7 +89,7 @@ const Product = require('./model/Product');
 const Review = require('./model/Review'); 
 const User = require('./model/User');
 
-const port = 3000;
+const port = envPort || 3000;
 
 var server = app.listen(port, () => {
     console.log('Node server is running...' + port)

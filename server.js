@@ -38,10 +38,6 @@ app.use(express.static(__dirname));
 // FILE UPLOAD
 const fileUpload = require('express-fileupload');
 
-const {
-    envPort, secret 
-} = require ('./config');
-
 
 //HBS
 const hbs = require('hbs');
@@ -62,7 +58,7 @@ const oneDay = 1000 * 60 * 60 * 24;
 
 //session middleware
 app.use(sessions({
-    secret: secret,
+    secret: "Shopaholic",
     saveUninitialized:true,
     cookie: { maxAge: oneDay },
     resave: false
@@ -71,7 +67,7 @@ app.use(sessions({
 
 // MONGODB
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://donnielle-andres:Shopaholic@apdev-shopaholic.74w8n.mongodb.net/test').then(
+mongoose.connect('mongodb+srv://donnielle-andres:Shopaholic@apdev-shopaholic.74w8n.mongodb.net/?retryWrites=true&w=majority').then(
         () => console.log("Shopaholic Database Connected")
     ).catch(
         (error) => {
@@ -89,7 +85,7 @@ const Product = require('./model/Product');
 const Review = require('./model/Review'); 
 const User = require('./model/User');
 
-const port = envPort || 3000;
+const port = 3000;
 
 var server = app.listen(port, () => {
     console.log('Node server is running...' + port)

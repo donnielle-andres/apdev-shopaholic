@@ -10,7 +10,7 @@ const router  = express.Router();
 const Product = require('../model/Product');
 const Review = require('../model/Review');
 const User = require('../model/User');
-// const { secret } = require('../config');
+const { secret } = require('../config');
 
 
 const controller = {
